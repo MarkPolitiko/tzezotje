@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css" defer="defer" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./js/swiper-bundle.min.js" defer="defer"></script>
+    <script src="./js/jquery-3.6.3.min.js" defer="defer"></script>
+    <script src="./js/popupPost.js" defer="defer"></script>
+    <script src="./js/script.js" defer="defer"></script>
+    <title>`T Zeezotje</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu-toggle">
+        <input type="checkbox" />
+
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+
+        <ul class="burger-menu">
+          <a href="#foodmenu" class="menu__item"><li>À la carte</li></a>
+          <a href="#reviews" class="menu__item"><li>Wijnkaart</li></a>
+          <a href="#about" class="menu__item"><li>Lunchmenu</li></a>
+          <a href="#contacts" class="menu__item"><li>Contact</li></a>
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class="menu__desktop">
+          <nav class="menu">
+            <div class="menu__logo">
+              <a href="#"><img src="./img/logo.png" alt="" class="logo" /></a>
+            </div>
+            <div class="menu__items">
+              <a href="#foodmenu" class="menu__item">À la carte</a>
+              <a href="#reviews" class="menu__item">Wijnkaart</a>
+              <a href="#about" class="menu__item">Lunchmenu</a>
+              <a href="#contacts" class="menu__item">Contact</a>
+            </div>
+            <a href="tel: +32 9 282 57 25" class="menu__phone-wrapper">
+              <img
+                src="./img/phone.svg"
+                alt="icon-phone"
+                class="menu__icon-phone"
+              />
+              +32 9 282 57 25
+            </a>
+          </nav>
+        </div>
+
+        <div class="popup__window">
+          <form action="./popup.php" class="popup">
+            <div class="popup__close">
+              <img src="./img/close-icon.svg" alt="close" />
+            </div>
+            <label for class="popup__header">Your Name</label>
+            <input type="text" name="name" required class="popup__input" />
+            <label for class="popup__header">Your Email</label>
+            <input type="email" name="email" required class="popup__input" />
+            <button type="submit" class="popup__button">Book</button>
+          </form>
+        </div>
+
+        <div class="header__content">
+          <h3 class="header__schedule">OPEN EVERYDAY 6AM - 9PM</h3>
+          <h1 class="header__slogan">
+            A bad day with lunch is better than a good day without it.
+          </h1>
+          <div class="header__buttons">
+            <button class="button header__button">Reserve a table</button>
+            <div class="links">
+              <img src="./img/Fb.svg" alt="Facebook" class="link" />
+              <img src="./img/Ig.svg" alt="Instagram" class="link" />
+              <img src="./img/Tw.svg" alt="Twitter" class="link" />
+              <img src="./img/Yt.svg" alt="YouTube" class="link" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="foodmenu" id="foodmenu">
+      <div class="container">
+        <div class="foodmenu__wrapper">
+          <div class="foodmenu__list">
+            <div class="foodmenu__event">
+              <div class="foodmenu__date">Woensdag 12/01</div>
+              <div class="foodmenu__dish">Salade met Serrano</div>
+              <div class="foodmenu__dots">• • •</div>
+              <div class="foodmenu__dish">Steak Tartaar</div>
+            </div>
+            <div class="foodmenu__event">
+              <div class="foodmenu__date">Donderdag 13/01</div>
+              <div class="foodmenu__dish">Toast Roquefort</div>
+              <div class="foodmenu__dots">• • •</div>
+              <div class="foodmenu__dish">Penne met Kip en Prei</div>
+            </div>
+            <div class="foodmenu__event">
+              <div class="foodmenu__date">Vrijdag 14/01</div>
+              <div class="foodmenu__dish">Verrassing van de Chef</div>
+              <div class="foodmenu__dots">• • •</div>
+              <div class="foodmenu__dish">Penne met Kip en Prei</div>
+            </div>
+            <div class="foodmenu__event">
+              <div class="foodmenu__date">Vrijdag 14/01</div>
+              <div class="foodmenu__dish">Verrassing van de Chef</div>
+              <div class="foodmenu__dots">• • •</div>
+              <div class="foodmenu__dish">Penne met Kip en Prei</div>
+            </div>
+            <div class="foodmenu__event">
+              <div class="foodmenu__date">Vrijdag 14/01</div>
+              <div class="foodmenu__dish">Verrassing van de Chef</div>
+              <div class="foodmenu__dots">• • •</div>
+              <div class="foodmenu__dish">Penne met Kip en Prei</div>
+            </div>
+          </div>
+          <div class="foodmenu__images">
+            <div class="foodmenu__image-1">
+              <img src="./img/img-1.png" alt="image-1" />
+            </div>
+            <div class="foodmenu__image-2">
+              <img src="./img/img-2.png" alt="image-2" />
+            </div>
+            <div class="foodmenu__rectangle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__slider swiper customSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews__item">
+                <div class="reviews__quotes">
+                  <img src="./img/quotes.svg" alt="Quotes" />
+                </div>
+                <h2 class="reviews__title">
+                  Goede service, lekker eten, toffe ambiance
+                </h2>
+                <p class="reviews__text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                </p>
+                <h3 class="reviews__author">ALAIN HEYNDRICKX</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__item">
+                <div class="reviews__quotes">
+                  <img src="./img/quotes.svg" alt="Quotes" />
+                </div>
+                <h2 class="reviews__title">
+                  Goede service, lekker eten, toffe ambiance
+                </h2>
+                <p class="reviews__text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                </p>
+                <h3 class="reviews__author">ALAIN HEYNDRICKX</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__item">
+                <div class="reviews__quotes">
+                  <img src="./img/quotes.svg" alt="Quotes" />
+                </div>
+                <h2 class="reviews__title">
+                  Goede service, lekker eten, toffe ambiance
+                </h2>
+                <p class="reviews__text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                </p>
+                <h3 class="reviews__author">ALAIN HEYNDRICKX</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="container">
+        <div class="about__items">
+          <div class="about__item">
+            <div class="about__description">
+              <h1 class="about__title">LEKKER ETEN</h1>
+              <p class="about__text">
+                Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze
+                zich op hun gemak voelen. Dat is onze filosofie, goed eten in
+                een goede sfeer.
+              </p>
+            </div>
+            <div class="about__photo">
+              <img src="./img/steak.png" alt="Photo-1" />
+            </div>
+          </div>
+          <div class="about__item">
+            <div class="about__photo">
+              <img src="./img/beer.png" alt="Photo-2" />
+            </div>
+            <div class="about__description">
+              <h1 class="about__title">TOFFE AMBIANCE</h1>
+              <p class="about__text">
+                Het creëren van de juiste sfeer is zeer belangrijk voor ons. We
+                nemen onze tijd om te zorgen dat alle elementen bijdragen aan de
+                juiste setting.
+              </p>
+            </div>
+          </div>
+          <div class="about__item">
+            <div class="about__description">
+              <h1 class="about__title">LEKKERE COCKTAILS</h1>
+              <p class="about__text">
+                Ons doel is simpel: een gastvrije plek bieden waar u kunt
+                genieten van een onvergetelijke cocktail, een goed gesprek en
+                lekker eten.
+              </p>
+            </div>
+            <div class="about__photo">
+              <img src="./img/cocktail.png" alt="Photo-3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="interior">
+      <div class="interior__background"></div>
+      <div class="container">
+        <div class="interior__description">
+          <div class="interior__info">
+            <h1 class="interior__title">Sfeerfoto's</h1>
+            <p class="interior__text">
+              De beste manier om de sfeer te ervaren is eens langskomen.
+              <br />
+              In tussentijd hebben we hier alvast wat foto’s voor je klaar.
+            </p>
+          </div>
+          <div class="interior__arrows-wrapper">
+            <div class="swiper-button-prev interior__button"></div>
+            <div class="swiper-button-next interior__button"></div>
+          </div>
+        </div>
+      </div>
+      <div class="interior__slider swiper customSwiper-new">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="interior__item">
+              <img src="./img/interior-1.png" alt="interior-1" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="interior__item">
+              <img src="./img/interior-2.png" alt="interior-2" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="interior__item">
+              <img src="./img/interior-3.png" alt="interior-3" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__data">
+            <h1 class="contacts__title">Contacts</h1>
+            <div class="contacts__item">
+              <div class="contacts__icon">
+                <img src="./img/phone-contact.svg" alt="Phone" />
+              </div>
+              <div>
+                <p class="contacts__text">Phone Number</p>
+                <a href="tel:+32 9 282 57 25" class="contacts__info"
+                  >+32 9 282 57 25</a
+                >
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__icon">
+                <img src="./img/mail-contact.svg" alt="Email" />
+              </div>
+              <div>
+                <p class="contacts__text">Email</p>
+                <a href="mailto: info@email.com" class="contacts__info"
+                  >info@email.com</a
+                >
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__icon">
+                <img src="./img/clock-contact.svg" alt="Clock" />
+              </div>
+              <div>
+                <p class="contacts__text">Opening Hours</p>
+                <h3 class="contacts__info">Everyday from 6 AM - 9 PM</h3>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__icon">
+                <img src="./img/map-contact.svg" alt="Map" />
+              </div>
+              <div>
+                <p class="contacts__text">Map Street</p>
+                <h3 class="contacts__info">Jl. Raya Surabaya 2787</h3>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__form">
+            <h1 class="contacts__title">have any questions?</h1>
+            <div class="contacts__form-wrapper">
+              <div class="contacts__form-container">
+                <label for="name" class="contacts__form-label">Name</label>
+                <input
+                  type="text"
+                  class="contacts__form-input"
+                  required
+                  name="name"
+                  placeholder="Input your name"
+                />
+              </div>
+              <div class="contacts__form-container">
+                <label for="email" class="contacts__form-label">Email</label>
+                <input
+                  type="text"
+                  class="contacts__form-input"
+                  required
+                  name="email"
+                  placeholder="Input your email"
+                />
+              </div>
+              <div class="contacts__form-container">
+                <label for="textarea" class="contacts__form-label"
+                  >Speciale request</label
+                >
+                <textarea
+                  class="contacts__form-text"
+                  name="textarea"
+                  placeholder="Input your special request"
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="button contacts__button">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <a href="#"
+          ><img src="./img/logo-color.png" alt="" class="footer__logo"
+        /></a>
+        <div class="links inverse">
+          <img src="./img/Fb.svg" alt="Facebook" class="footer__link" />
+          <img src="./img/Ig.svg" alt="Instagram" class="footer__link" />
+          <img src="./img/Tw.svg" alt="Twitter" class="footer__link" />
+          <img src="./img/Yt.svg" alt="YouTube" class="footer__link" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

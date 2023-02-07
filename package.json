@@ -1,0 +1,37 @@
+{
+  "name": "tzezotje",
+  "version": "1.0.0",
+  "description": "test project with restaurant landing site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkPolitiko/tzezotje.git"
+  },
+  "author": "Mark Politiko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkPolitiko/tzezotje/issues"
+  },
+  "homepage": "https://github.com/MarkPolitiko/tzezotje#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bower": "^1.8.14",
+    "browser-sync": "^2.27.11",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-load-plugins": "^2.0.8",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "imagemin-pngquant": "^9.0.2",
+    "node": "^19.6.0",
+    "rimraf": "^4.1.2"
+  }
+}
